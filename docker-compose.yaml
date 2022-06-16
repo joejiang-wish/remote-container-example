@@ -1,0 +1,9 @@
+services:
+  server:
+    container_name: remote-docker-example-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/root/app
+
