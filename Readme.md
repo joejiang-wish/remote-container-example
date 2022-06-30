@@ -5,7 +5,29 @@ If you want to setup remote container on your container instead of this example,
 
 This project is an example of how to use vscode-remote-containers with `python2` Language, `tornado` 3 part lib.
 
-## Steps
+
+# How to use vscode-remote-containers
+
+## Setup by [devcontainer.json](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
+
+1. Declare `.devcontainer/devcontainer.json` at root of your project.
+
+    ```json
+    {
+    "language": "python2",
+    "path": "./",
+    "container": "python2-tornado-container",
+    "container_args": [
+        "--port",
+        "8888"
+    ]
+    }
+    ```
+
+2. open the Command Pallette(macos `shift+command+p`) and click `Remote Containers: reopen container`
+
+## Setup manually
+### Steps
 1. At host machine run `make dev` to ensure container start
 2. Do the following setup guides.
 
@@ -28,7 +50,7 @@ This project is an example of how to use vscode-remote-containers with `python2`
 
     ![Untitled](assets/install-python-extension.png)
 
-6.open the Command Pallette(macos `shift+command+p`) and select interpreter, select `/usr/local/bin/python` (If the app start by virtualenv in container, please select the correct python PATH.)
+6. open the Command Pallette(macos `shift+command+p`) and select interpreter, select `/usr/local/bin/python` (If the app start by virtualenv in container, please select the correct python PATH.)
 
     ![Untitled](assets/select-interpreter.png)
 
