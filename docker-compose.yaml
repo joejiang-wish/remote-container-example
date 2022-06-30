@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - PYTHONPATH=root/app
+      - PYTHONDONTWRITEBYTECODE=1
     volumes:
       - .:/root/app
 
