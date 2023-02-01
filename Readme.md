@@ -6,11 +6,11 @@ If you want to setup remote container on your container instead of this example,
 This project is an example of how to use vscode-remote-containers with `python2` Language, `tornado` 3 part lib.
 
 
-# How to use vscode-remote-containers
+# Start this project by vscode-remote-containers
 
 ## Setup by [devcontainer.json](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)(RECOMMENDED)
 
-1. Declare `.devcontainer/devcontainer.json` at root of your project.
+1. Declare `.devcontainer/devcontainer.json` at root of your project. (skip this step since devcontainer.json is prepared.)
 
     ```json
     {
