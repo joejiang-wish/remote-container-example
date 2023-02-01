@@ -8,7 +8,7 @@ This project is an example of how to use vscode-remote-containers with `python2`
 
 # How to use vscode-remote-containers
 
-## Setup by [devcontainer.json](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
+## Setup by [devcontainer.json](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)(RECOMMENDED)
 
 1. Declare `.devcontainer/devcontainer.json` at root of your project.
 
